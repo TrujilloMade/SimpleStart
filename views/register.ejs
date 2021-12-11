@@ -1,0 +1,15 @@
+<main class="formMain">
+
+    <form action="/register" method="POST" class="register-form">     
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required value="<%= typeof username != 'undefined' ? username : '' %>">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required value="<%= typeof email != 'undefined' ? email : '' %>">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <label for="confirmPass">password</label>
+        <input type="password" name="confirmPass" id="confirmPass">
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="login">Log In</a></p>
+    </form> 
+</main>

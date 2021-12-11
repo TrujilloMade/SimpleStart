@@ -1,0 +1,2 @@
+SESSION_SECRET = "RANDOM KEY"
+USERS_DATABASE_URI = mongodb+srv://<USERNAME>:<PASSWORD>.ilw1i.mongodb.net/users?retryWrites=true&w=majority

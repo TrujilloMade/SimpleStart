@@ -1,0 +1,57 @@
+nav
+    padding: 1em
+    justify-content: space-between
+    align-items: center
+
+    li
+        list-style: none
+        // width: 100%
+
+    a 
+        text-decoration: none
+        display: inline-block
+        width: 100%
+        // &:visited
+
+.nav-logo
+    z-index: 9999
+
+.nav-list
+    display: flex
+    flex-direction: column
+    z-index: 999
+    gap: 1em
+    padding: 11% 0
+    align-items: center
+
+    position: fixed
+    inset: 0% 0
+    transform: translateX(150%)
+    transition: transform 550ms ease-out
+
+    &[data-visible='true']
+        transform: translateX(0%)
+        height: 100vh
+
+
+//figure out a better way to deal with height and width
+.nav-toggle
+    z-index: 9999
+    width: 2em
+    height: 2em
+    background: url('../icons/hamburger.svg')
+    cursor: pointer
+
+
+//BREAKPOINT
+@media (min-width: $breakpoint-tablet)
+    .nav-toggle
+        display: none
+
+    .nav-list
+        flex-direction: row
+        inset: auto
+        padding: 0 0
+        position: relative
+
+        transform: translateX(0%)

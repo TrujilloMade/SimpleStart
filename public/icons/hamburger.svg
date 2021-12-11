@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 541.14 499.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: $hmbrgr-clr;
+      }
+    </style>
+  </defs>
+  <g id="Hamburger">
+    <rect id="botBun" class="cls-1" width="541.14" height="93.5"/>
+    <rect id="meat" class="cls-1" y="171.09" width="541.14" height="93.5"/>
+    <rect id="topBun" class="cls-1" y="342.19" width="541.14" height="93.5"/>
+  </g>
+</svg>

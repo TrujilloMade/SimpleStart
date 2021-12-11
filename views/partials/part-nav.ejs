@@ -1,0 +1,35 @@
+<nav class="flex-row">
+    
+    <div class="nav-logo">
+        <a href="/" class="">
+           <p>Logo</p>
+        </a>
+    </div>
+    
+    <!-- This will only be seen on mobile, otherwise ignored except as a header for screen readers -->
+    <button class="nav-toggle" id="nav-toggle" aria-controls="nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+    
+    <ul id="nav" class="nav-list" data-visible="false">
+       <!-- Always visible in navigation -->
+        <li>
+            <a href="/">Home</a>
+        </li>
+            <!-- Only visable if logged in -->
+        <% if (loggedIn) { %>
+            <li>
+                <a href="/dashboard">Dashboard</a>
+            </li>
+            <li id="logInOutBtn" data-loginout='out'>
+                <a href="/logout">Logout</a>
+            </li>
+
+            <!-- Only visible if not logged in -->
+        <% } else{ %>
+            <li id="logInOutBtn" data-loginout='in'>
+                <a href="/login" >Login</a>
+            </li>
+        <% } %>
+    </ul>
+</nav>
+
+
